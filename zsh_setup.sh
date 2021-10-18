@@ -7,6 +7,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 mv ~/.zshrc ~/.zshrc.old
 mv ~/.p10k.zsh ~/.p10k.zsh.old
 echo "Symlinking ..."
-ln -s zshrc ~/.zshrc
-ln -s p10k.zsh .p10k.zsh
+ln -s ~/.dotfiles-zsh/zshrc ~/.zshrc
+ln -s ~/.dotfiles-zsh/p10k.zsh ~/.p10k.zsh
 chsh -s $(which zsh)
