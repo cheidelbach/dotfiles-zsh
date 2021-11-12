@@ -1,11 +1,13 @@
 #!/bin/sh
 
+sudo apt install fontconfig -y
+
 if [ ! -d "/usr/local/share" ]; then
-    makedir /usr/local/share
+    sudo mkdir /usr/local/share
 fi
 
 if [ ! -d "/usr/local/share/fonts" ]; then
-    makedir /usr/local/share/fonts
+    sudo mkdir /usr/local/share/fonts
 fi
 
 sudo cp -r fonts/* /usr/local/share/fonts
